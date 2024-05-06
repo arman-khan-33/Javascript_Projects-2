@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARTY-GAME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="showSelectPlayerBox()">
+
+    <div class="loaderMain">
+        <div id="load" class="loader"> </div>
+        <!-- <h3>Wait...</h3> -->
+    </div>
+    </div>
+    <div class="party_game">
+
+        <div id="selectPlayer">
+            <h2>Select Players</h2>
+            <ul id="select_main">
+                <li>
+                    <input type="radio" id="select" name="select_name" value="2">
+                    <label for="select" class="select" id="button1"></label><span class="playerNumber">2 Players</span>
+                </li>
+                <li>
+                    <input type="radio" id="select2" name="select_name" value="4">
+                    <label for="select2" class="select" id="button2"></label><span class="playerNumber">4 Players</span>
+                </li>
+                <li>
+                    <input type="radio" id="select3" name="select_name" value="6">
+                    <label for="select3" class="select" id="button3"></label><span class="playerNumber">6 Players</span>
+                </li>
+
+            </ul>
+            <button id="nextBtn">Next</button>
+        </div>
+
+
+        <div class="playersBox">
+            <div class="selectedNames">
+                <p id="playerCount">Enter Player 1's Name.</p>
+                <input type="text" id="enteredName" placeholder="Enter The Name.">
+                <button id="enterButton">Enter</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Confetti effect -->
+    <canvas id="drawing_canvas"></canvas>
+    <div class="winner-main">
+        <h3 id="winner"></h3>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
